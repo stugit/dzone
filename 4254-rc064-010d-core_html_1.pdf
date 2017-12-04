@@ -1,0 +1,472 @@
+<!DOCTYPE HTML>
+
+
+<html xmlns:ng="http://angularjs.org" id="ng-app" lang="en" ng-app="TH">
+
+<head ng-controller="DZHeadController">
+<!--
+
+##::::: ##: ########::::::: ###:::: ########:: ########:::: ##:::: ##: ####: ########:: ####: ##::: ##:: ######::
+##: ##: ##: ##.....::::::: ## ##::: ##.... ##: ##.....::::: ##:::: ##:. ##:: ##.... ##:. ##:: ###:: ##: ##... ##:
+##: ##: ##: ##::::::::::: ##:. ##:: ##:::: ##: ##:::::::::: ##:::: ##:: ##:: ##:::: ##:: ##:: ####: ##: ##:::..::
+##: ##: ##: ######:::::: ##:::. ##: ########:: ######:::::: #########:: ##:: ########::: ##:: ## ## ##: ##:: ####
+##: ##: ##: ##...::::::: #########: ##.. ##::: ##...::::::: ##.... ##:: ##:: ##.. ##:::: ##:: ##. ####: ##::: ##:
+##: ##: ##: ##:::::::::: ##.... ##: ##::. ##:: ##:::::::::: ##:::: ##:: ##:: ##::. ##::: ##:: ##:. ###: ##::: ##:
+ ###. ###:: ########:::: ##:::: ##: ##:::. ##: ########:::: ##:::: ##: ####: ##:::. ##: ####: ##::. ##:. ######::
+
+Skills wanted: Java, AngularJS, Spring, Hibernate, UX and Responsive Design
+http://dzone.applytojob.com/apply
+
+-->
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+    <meta name="description" ng-attr-content="{{ service.description }}" content="Programming, Web Development, and DevOps news, tutorials and tools for beginners to experts. Hundreds of free publications, over 1M members, totally free." />
+    <meta name="keywords" ng-attr-content="{{ service.keywords }}" content="programming, software development, devops, java, agile, web, iot, database, mobile, big data, cloud" />
+
+    <meta property="og:description" ng-attr-content="{{ service.description }}" content="Programming, Web Development, and DevOps news, tutorials and tools for beginners to experts. Hundreds of free publications, over 1M members, totally free." />
+
+    <meta ng-attr-content="{{ service.noIndex ? 'noindex' : '' }}" ng-attr-name="{{ service.noIndex ? 'robots' : '' }}"
+          name="" content="" />
+
+    <meta property="og:site_name" ng-attr-content="{{ service.siteName }}" content="dzone.com" />
+    <meta property="og:title" ng-attr-content="{{ service.title }}" content="DZone" />
+    <meta property="og:url" ng-attr-content="{{ service.canonical }}" content="https://dzone.com/users/login.html" />
+    <meta ng-if="service.img" ng-attr-content="{{ service.img }}" property="og:image" content="" />
+    <meta ng-if="service.type" ng-attr-content="{{ service.type }}" property="og:type" content="" />
+
+    <meta name="twitter:site" content="@dzone" />
+    <meta ng-if="service.twitterImage" ng-attr-content="{{ service.twitterImage }}" name="twitter:image" content="" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:description" ng-attr-content="{{ service.description }}" content="Programming, Web Development, and DevOps news, tutorials and tools for beginners to experts. Hundreds of free publications, over 1M members, totally free." />
+    <meta name="twitter:title" ng-attr-content="{{ service.title }}" content="DZone"/>
+
+    <meta ng-if="service.wordCount" property="article:wordcount" ng-attr-content="{{service.wordCount}}" content="" />
+    <meta name="referrer" content="origin">
+
+    <link rel="dns-prefetch" href="//www.googletagservices.com"/>
+    <link rel="dns-prefetch" href="//pixel-geo.prfct.co"/>
+    <link rel="dns-prefetch" href="//secure.adnxs.com"/>
+    <link rel="dns-prefetch" href="//hn.inspectlet.com"/>
+    <link rel="dns-prefetch" href="//inspectletws.herokuapp.com"/>
+    <link rel="dns-prefetch" href="//tag.perfectaudience.com"/>
+    <link rel="dns-prefetch" href="//www.google-analytics.com"/>
+    <link rel="image_src"   ng-href="{{ service.img }}" href="" /><!--formatted-->
+
+
+    <link rel="canonical" ng-href="{{service.canonical}}" href="https://dzone.com/users/login.html"/>
+    <link ng-if="service.prevPage" rel="prev" ng-href="{{ service.prevPage }}" href="" />
+    <link ng-if="service.nextPage" rel="next" ng-href="{{ service.nextPage }}" href=""/>
+    <link rel="icon" type="image/x-icon" href="/themes/dz20/images/favicon.ico">
+
+    <title ng-bind="service.title">DZone</title>
+
+    <meta name="df-verify" content="df0d76632b4543" />
+
+<link rel="stylesheet" type="text/css" href="//dz2cdn3.dzone.com/storage/pub/7405671-combined.css" charset="utf-8"/><link rel="stylesheet" type="text/css" href="//dz2cdn3.dzone.com/storage/pub/7405698-combined.css" charset="utf-8"/>
+</head>
+<body>
+
+    <div class="container container1" th-element="container1" th-element-groups="[]" ng-hide="$root.isHidden('container1')" data-th-element-name="container1"><div class="row row2" th-element="row2" th-element-groups="['container1']" ng-hide="$root.isHidden('row2')" data-th-element-name="row2"><div class="col-xs-12 usersLoginFormV33 usersLoginFormV3 oUhbwfbjZcprBjZcprBC oUhbwfbjZcprCjZcprCC" th-element="usersLoginFormV33" th-element-groups="['container1','row2']" ng-hide="$root.isHidden('usersLoginFormV33')" data-th-element-name="usersLoginFormV33" data-th-widget="users.loginFormV3" data-widget-users-login-form-v3="" ng-controller="usersLoginFormV33"><div class="row whole-container" ng-cloak>
+    <div class="col-xs-12 icon-container">
+
+        <div class="col-xs-12">
+            <img src="/themes/dz20/images/DZone_MoleculeGradient.png" ng-class="{'top-d-image':isDownload}">
+            <p ng-if="!isDownload">Trusted by more than one million developers worldwide</p>
+        </div>
+
+        <div ng-if="isDownload" class="col-xs-4">
+            <img ng-src="{{asset.image}}" class="pull-right download-img">
+        </div>
+        <div ng-if="isDownload" class="col-xs-8 col-sm-6">
+            <p class="p-download">Log In or Sign Up to continue to your download!</p>
+        </div>
+    </div>
+
+    <div class="col-xs-12 box-container" ng-cloak>
+        <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2 col-xl-2 corners"></div>
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 black-container">
+            <form role="form" method="POST" action="/j_spring_security_check" ng-if="option == 0">
+                <h2>Already a Member?</h2>
+                <input type="hidden" name="TH_CSRF" value="6341174934693141881"/>
+                <input name="_spring_security_remember_me" type="hidden" value="true" />
+                <div class="col-sm-1 col-xs-2 icons first-icon">
+                    <span class="icon-mail-alt"></span>
+                </div>
+                <div class="form-group col-sm-11 col-xs-10 first-input" ng-class="{'has-error': error}">
+                    <input type="text" name="j_username" autocomplete="off" ng-model="credentials.username" class="my-form-control" placeholder="Email Address or Username" />
+                </div>
+                <div class="col-sm-1 icons col-xs-2">
+                    <span class="icon-key"></span>
+                </div>
+                <div class="form-group col-sm-11 col-xs-10" ng-class="{'has-error': error}">
+                    <input type="password" name="j_password" ng-model="credentials.password" class="my-form-control" placeholder="Password" />
+                    <p ng-if="error" class="error-p">Incorrect Username or Password</p>
+
+                </div>
+                <div class="col-sm-1 col-xs-2 icons">
+                </div>
+                <div class="form-group button-right col-sm-11 col-xs-10 member-button">
+                    <button type="submit" ng-disabled="!credentials.username || !credentials.password" class="btn">Log In</button>
+                </div>
+                <div class="forgot-pass col-xs-12">
+                    <a ng-href="" ng-click="setStep(1)" >Forgot Password?</a>
+                </div>
+                <div class="not-member col-xs-12">
+                    <a ng-href="" ng-click="toggleView()" >Not a member?</a>
+                </div>
+            </form>
+
+            <div ng-if="option == 1">
+                <h2 class="h2-password">Forgot your password?</h2>
+                <p class="p-password">Enter the email address you gave us when you signed up and we will send you a link to create a new password</p>
+                <div class="form-group input-container first-input" ng-class="{'has-error': cantRecover}">
+                    <input type="email" ng-model="credentials.username" name="email" autocomplete="off" class="my-form-control" placeholder="Enter your Email">
+                    <!--<div class="icon" ng-class="{'ok_icon fa fa-check': !userEmailForm.email.$invalid && user.email != ''}"></div>-->
+                    <span class="text-warning" ng-if="cantRecover">We couldn't find your email</span>
+                </div>
+                <div class="form-group">
+                    <div class="member-button button-right">
+                        <button ng-click="requestPassword()" ng-disabled="!credentials.username || credentials.username.length < 2" type="submit" class="btn btn-success btn-reset-link" value="SEND MY RESET LINK">Send My Reset Link</button>
+                    </div>
+                </div>
+                <div>
+                    <div class="forgot-pass">
+                        <a ng-href="" ng-click="setStep(0)" >Return to login</a>
+                    </div>
+                </div>
+            </div>
+
+            <div ng-if="option == 2">
+                <h2 class="h2-password">Success!</h2>
+                <p class="p-password">Email sent to <span> {{ credentials.username }}</span>.
+                Click the link in the email to reset your password. </p>
+                <p class="no-email-title">No email after 15 minutes?</p>
+                <p class="p-password">Check your spam folder for an email from <span class="no-reply"> noreply@dzone.com</span></p>
+                <p class="still-no-email" >Still no email? Contact support: <a ng-href="mailto:support@dzone.com">support@dzone.com</a></p>
+                <div class="forgot-pass">
+                    <a ng-href="" ng-click="setStep(0)" >Return to login</a>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 white-container">
+            <h2>Join DZone for Free!</h2>
+            <p>Get updates, free resources, and the opportunity to share your knowledge in a professional community.</p>
+            <input name="_spring_security_remember_me" type="hidden" value="true" />
+            <form method="post" action="/user/register" name="emailForm">
+                <input type="hidden" name="TH_CSRF" value="{{ $root.csrfToken }}" />
+                <div class="col-md-12 member-button first-input">
+                    <input type="email" ng-model="registration.email" name="email" autocomplete="off" class="my-form-control" placeholder="Enter email address">
+                    <div class="icon" ng-class="{'icon-ok': (!emailForm.email.$invalid && registration.email !='' && registration.email !=null) }"></div>
+                </div>
+                <div class="col-md-12 member-button">
+                    <button class="btn" ng-disabled="emailForm.email.$invalid || !registration.email !=' '" type="submit">Sign Up</button>
+                </div>
+                <div class="not-member already-member col-xs-12">
+                    <a ng-href="" ng-click="toggleView()" >Already a member?</a>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-xs-0 col-sm-0 col-md-2 col-lg-2 col-xl-2 corners"></div>
+    </div>
+</div></div></div></div>
+
+    <div class="row">
+        <a href="#" class="back-to-top"><i class="icon-up-big"></i></a>
+    </div>
+
+
+
+    <script type="text/ng-template" id="/themes/dz20/widgets/header/sections/widget.html">
+<span dropdown is-open="dropdown.open" ng-class="{small: width < 768}">
+    <span dropdown-toggle class="sections"><i class="icon-menu"></i>
+        <span class="menuLabel" ng-if="width < 768"></span></span>
+    <ul class="dropdown-menu ul-first" ng-style="width < 768 ? {'top': headerSize + 0 + 'px', 'padding-top': '15px'} : {}">
+        <li><a href="/links">Links</a></li>
+        <li><a href="/refcardz">Refcardz</a></li>
+        <li><a href="/guides">Guides</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li class="divider"></li>
+
+        <li class="post-title"><span>Zones</span></li>
+        <li ng-repeat="topic in portals" class="dropdown">
+            <a ng-href="{{ topic.url }}">{{ topic.name }}</a>
+        </li>
+        <li class="divider"></li>
+        <li class="post-title"><span>Post</span></li>
+        <li><a href="/links">Link</a></li>
+        <li><a href="/article/post.html">Article</a></li>
+    </ul>
+</span>
+
+
+    </script>
+
+<script type="text/ng-template" id="followus.html">
+<div class="top-social">
+    <p>Let's be friends:</p>
+    <ul class="icons-only" ng-class="{open: isOpen}" click-outside="outside()">
+        <li class="rss-icon" id="rss-spotlight-1">
+            <a href="/pages/feeds"><i class="icon-rss-1"></i></a>
+        </li>
+        <li class="twitter-icon">
+            <a href="https://twitter.com/DZone" target="_blank"><i class="icon-twitter"></i></a>
+        </li>
+        <li class="facebook-icon">
+            <a href="https://www.facebook.com/DZone-259639764711" target="_blank"><i class="icon-facebook-1"></i></a>
+        </li>
+        <li class="google-icon">
+            <a href="https://plus.google.com/+dzone/posts" target="_blank"><i class="icon-gplus"></i></a>
+        </li>
+        <li class="linkedin-icon">
+            <a href="https://www.linkedin.com/company/dzone" target="_blank"><i class="icon-linkedin-1"></i></a>
+        </li>
+
+            <ul class="social-dropdown dropdown-menu">
+                <li class="rss" id="rss-spotlight"><a href="/pages/feeds"><i class="icon-rss-squared"></i> <span>RSS Feed</span></a></li>
+                <li class="twitter" id="twitter-spotlight">
+                    <a href="https://twitter.com/DZone" class="twitter-follow-button" data-show-count="true"
+                       data-show-screen-name="false">Follow @DZone</a>
+                </li>
+                <li class="fb-like" id="fb-spotlight" data-href="https://www.facebook.com/DZone-259639764711/timeline/"
+                    data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></li>
+                <li class="google-plus" id="gplus-spotlight">
+                    <div class="g-follow" data-annotation="bubble" data-height="20"
+                         data-href="https://plus.google.com/108688665090780146602" data-rel="publisher"></div>
+                </li>
+                <li class="linkedin" id="linkedin-spotlight">
+                    <script type="IN/FollowCompany" data-id="114427" data-counter="right"></script>
+                </li>
+            </ul>
+    </ul>
+</div>
+</script><script type="text/ng-template" id="dzlike.html">
+<div class="dz-like " ng-class="{liked: status.liked}" ng-click="like()">
+    <a href="#">
+        <i class="icon-up-dir"></i>
+        <span>{{ status.score }}</span>
+    </a>
+</div>
+</script><script type="text/ng-template" id="dztopicselect.html"><ui-select  ng-if="canAddTopics" ng-model="editing.topics" theme="bootstrap" multiple tagging tagging-label="(add topic)"
+           tagging-tokens=",">
+    <ui-select-match class="input-tags"><div class="topics-tag">{{ $item }}</div></ui-select-match>
+    <ui-select-choices
+            refresh="topicsRefresh($select.search)"
+            refresh-delay="250"
+            repeat="topic in foundTopics | filter: $select.search">
+        <div ng-bind-html="topic | highlight: $select.search"></div>
+    </ui-select-choices>
+</ui-select>
+<ui-select ng-if="!canAddTopics" ng-model="editing.topics" theme="bootstrap" multiple>
+    <ui-select-match><div class="topics-tag">{{ $item }}</div></ui-select-match>
+    <ui-select-choices
+            refresh="topicsRefresh($select.search)"
+            refresh-delay="250"
+            repeat="topic in foundTopics | filter: $select.search">
+        <div ng-bind-html="topic | highlight: $select.search"></div>
+    </ui-select-choices>
+</ui-select></script><script type="text/ng-template" id="dzsave.html"><i class="icon-star-empty" ng-class="{'icon-star gold': status.saved, 'icon-star-empty': !status.saved}" tooltip-html-unsafe="{{status.saved ? 'Saved' : 'Save'}}" ng-click="save()"></i>
+<!--<span ng-class="{'gold count': status.saved}">{{ status.count }}</span>--></script><script type="text/ng-template" id="overlay.html"><div class="ngdialog th-overlay">
+    <div class="ngdialog-overlay">
+        <div class="overlay-box">
+            <i class="icon-spin5 animate-spin"></i>
+
+            <p>{{ message }}</p>
+        </div>
+    </div>
+</div></script><script type="text/ng-template" id="inline-editable.html"><div class="inline-editable" ng-if="!status.editing" ng-click="edit()" ng-transclude></div>
+<div class="inline-editor-wrapper" ng-if="status.editing">
+    <textarea class="inline-editor" ng-model="status.editValue" ng-if="type == 'textarea'"></textarea>
+    <input class="inline-editor" ng-model="status.editValue" ng-if="type == 'input'"></textarea>
+    <div class="inline-editor-tools">
+        <button class="btn select-ok" ng-disabled="!status.editValue" ng-click="save()"><i class="icon-check-1"></i></button>
+        <button class="btn select-cancel" ng-disabled="!editable" ng-click="cancel()"><i class="icon-cancel-1"></i></button>
+    </div>
+</div></script><script type="text/ng-template" id="dzupload.html"><span class="btn btn-upload" >
+    <div ng-bind-html="label"></div>
+    <div class="progress-container" ng-style="{visibility: uploading ? 'visible' : 'hidden'}">
+        <progressbar max="100" value="progress"><span>{{ progress }}</span></progressbar>
+    </div>
+    <input type="file" ng-file-drop ng-file-select ng-file-change="upload($files)" />
+</span></script><script type="text/ng-template" id="dzfollow.html"><button class="btn btn-follow" ng-class="{'btn-success': !status.followed, 'btn-warning': status.followed, 'hidden': followed.id == $root.user.id}" ng-click="follow()"><span ng-if="!status.followed"><i class="icon-plus"></i> Follow</span><span ng-if="status.followed" class="following">Following</span><span ng-if="status.followed" class="hover">Unfollow</span></button></script><script type="text/ng-template" id="dzphoto.html"><i class="icon-camera-alt photo" type="file" ng-file-drop ng-file-select ng-file-change="upload($files)"></i></script><script type="text/ng-template" id="dialog.skeleton.html"><div class="dialog-title">
+    <h1 ng-if="$dialog.title">{{ $dialog.title }}</h1>
+</div>
+<div class="dialog-body {{ $dialog.extraClass }}" ng-include="$dialog.template"></div>
+<div class="dialog-footer">
+    <div class="dialog-buttons" ng-if="$dialog.buttons">
+        <button ng-repeat="button in $dialog.buttons" ng-hide="button.hidden" ng-disabled="button.disabled || $dialog.executing"
+                class="btn btn-{{ button.type || 'info' }}" ng-click="$dialog.runAction(button)">
+            <span class="icon-spin6 animate-spin" ng-if="button.executing"></span>{{ button.label || button.name }}</button>
+    </div>
+</div></script><script type="text/ng-template" id="dialog.message.html"><div class="message-icon">
+    <i class="icon-{{ icon }}"></i>
+</div>
+<div class="message-text">
+    <p class="message-title" ng-bind-html="trustAsHtml(title)"></p>
+    <p ng-bind-html="trustAsHtml(message)"></p>
+</div>
+</script><script type="text/ng-template" id="dialog.confirm.html"><p>{{ message }}</p></script>
+<script type="text/javascript">
+
+    var TH_CORE_VARS = {};
+
+    try {
+        TH_CORE_VARS.additional = {};
+
+        TH_CORE_VARS.additional.model = [{"authModeKeys":["yahoo","local","verisign","openid","livejournal","flickr","blogger","wordpress","claimid","aol","technorati"],"metaData":{"title":"DZone","description":"Programming, Web Development, and DevOps news, tutorials and tools for beginners to experts. Hundreds of free publications, over 1M members, totally free.","keywords":"programming, software development, devops, java, agile, web, iot, database, mobile, big data, cloud","siteName":"dzone.com","url":"https://dzone.com","img":null,"imgprop":"og:image","twitterImage":null,"type":null,"wordCount":null,"canonical":"https://dzone.com/users/login.html","noIndex":false,"noFollow":false,"prevPage":null,"nextPage":null,"useEscapedFragment":false,"robots":false,"robotsTag":""}}];
+        TH_CORE_VARS.additional.loadedStyles = [["/lib/bootstrap/bootstrap.less","/lib/fontello/css/fontello.css","/lib/fontello/css/animation.css","/lib/angular-ui/select.css","/lib/ngDialog/css/ngDialog.css","/less/ngDialog-theme.less","/less/container.less","/lib/bootstrap-switch/bootstrap-switch.css","/less/dzone20.less","/less/fonts.less","/less/directives.less","/lib/sb/sb.css","/lib/bootstrap-slider/bootstrap-slider.css","/widgets/users/loginFormV2/loginFormV2.less","/widgets/users/loginFormV3/loginFormV3.less"]];
+        TH_CORE_VARS.additional.loadedScripts = [["/lib/jquery/jquery.js","/lib/lodash/lodash.js","/lib/moment/moment.js","/scripts/utils.js","/lib/angular/angular.js","/lib/angular/angular-sanitize.js","/lib/local-storage/angular-local-storage.js","/lib/bootstrap/dropdown.js","/lib/angular-ui/bootstrap.js","/lib/angular-ui/select.js","/lib/bootstrap-switch/bootstrap-switch.js","/lib/ngDialog/js/ngDialog.js","/lib/angular-moment/angular-moment.js","/scripts/app.js","/scripts/socket.js","/scripts/services.js","/scripts/ui-services.js","/scripts/directives.js","/scripts/filters.js","/lib/angular/angular-cookies.js","/lib/angulartics/angulartics.js","/lib/angulartics/angulartics-ga.js","/lib/angular-touch/angular-touch.min.js","/lib/elastic/elastic.js","/lib/ng-file-upload/angular-file-upload-all.js","/scripts/dzone.js","/scripts/ads.js","/scripts/social-media.js","/scripts/head.js","/scripts/links.js","/scripts/utilities/directives.js","/scripts/utilities/services.js","/scripts/utilities/editor.js","/lib/bootstrap-slider/bootstrap-slider.js","/lib/bootstrap-slider/directive.js","/lib/sb/sb.js","/widgets/users/loginFormV2/widget.js"]];
+        TH_CORE_VARS.additional.botInfo = [{"isRenderBot":false}];
+        TH_CORE_VARS.additional.TH_CSRF = "6341174934693141881";
+        TH_CORE_VARS.additional.request = [{"site":{"id":7,"title":"DZone: Programming & DevOps news, tutorials & tools","keywords":"programming, software development, devops, java, agile, web, iot, database, mobile, big data, cloud","description":"Programming, Web Development, and DevOps news, tutorials and tools for beginners to experts. Hundreds of free publications, over 1M members, totally free.","name":"DZone.com"},"dev":false,"cdn":["dz2cdn1.dzone.com","dz2cdn2.dzone.com","dz2cdn3.dzone.com","dz2cdn4.dzone.com"],"theme":"dz20","context":"","user":{"id":2500002,"authenticated":false,"name":"Anonymous","realName":null,"avatar":"https://secure.gravatar.com/avatar/?d=identicon&r=PG","profile":"/users/2500002/anon-user.html"}}];
+        TH_CORE_VARS.additional.portals = [[{"hideFromNav":false,"topic":8,"id":2,"shortTitle":"agile-methodology-training-tools-news","color":"red","name":"Agile","hideFromHomepageWidgets":false,"code":"agile","url":"/agile-methodology-training-tools-news"},{"hideFromNav":false,"topic":2551,"id":4001,"shortTitle":"artificial-intelligence-tutorials-tools-news","color":"purple","name":"AI","hideFromHomepageWidgets":false,"code":"ai","url":"/artificial-intelligence-tutorials-tools-news"},{"hideFromNav":false,"topic":6129,"id":3,"shortTitle":"big-data-analytics-tutorials-tools-news","color":"green","name":"Big Data","hideFromHomepageWidgets":false,"code":"big-data","url":"/big-data-analytics-tutorials-tools-news"},{"hideFromNav":false,"topic":30,"id":4,"shortTitle":"cloud-computing-tutorials-tools-news","color":"orange","name":"Cloud","hideFromHomepageWidgets":false,"code":"cloud","url":"/cloud-computing-tutorials-tools-news"},{"hideFromNav":false,"topic":59,"id":5,"shortTitle":"database-sql-nosql-tutorials-tools-news","color":"purple","name":"Database","hideFromHomepageWidgets":false,"code":"database","url":"/database-sql-nosql-tutorials-tools-news"},{"hideFromNav":false,"topic":31,"id":6,"shortTitle":"devops-tutorials-tools-news","color":"yellow","name":"DevOps","hideFromHomepageWidgets":false,"code":"devops","url":"/devops-tutorials-tools-news"},{"hideFromNav":false,"topic":1138,"id":7,"shortTitle":"enterprise-integration-training-tools-news","color":"green","name":"Integration","hideFromHomepageWidgets":false,"code":"integration","url":"/enterprise-integration-training-tools-news"},{"hideFromNav":false,"topic":48,"id":8,"shortTitle":"iot-developer-tutorials-tools-news-reviews","color":"orange","name":"IoT","hideFromHomepageWidgets":false,"code":"iot","url":"/iot-developer-tutorials-tools-news-reviews"},{"hideFromNav":false,"topic":1,"id":1,"shortTitle":"java-jdk-development-tutorials-tools-news","color":"purple","name":"Java","hideFromHomepageWidgets":false,"code":"java","url":"/java-jdk-development-tutorials-tools-news"},{"hideFromNav":false,"topic":29,"id":9,"shortTitle":"mobile-app-developer-tutorials-tools-news","color":"yellow","name":"Mobile","hideFromHomepageWidgets":false,"code":"mobile","url":"/mobile-app-developer-tutorials-tools-news"},{"hideFromNav":false,"topic":653,"id":10,"shortTitle":"apm-tools-performance-monitoring-optimization","color":"red","name":"Performance","hideFromHomepageWidgets":false,"code":"performance","url":"/apm-tools-performance-monitoring-optimization"},{"hideFromNav":false,"topic":85,"id":2001,"shortTitle":"application-web-network-security","color":"green","name":"Security","hideFromHomepageWidgets":false,"code":"security","url":"/application-web-network-security"},{"hideFromNav":false,"topic":35,"id":11,"shortTitle":"web-development-programming-tutorials-tools-news","color":"orange","name":"Web Dev","hideFromHomepageWidgets":false,"code":"webdev","url":"/web-development-programming-tutorials-tools-news"},{"hideFromNav":true,"topic":1382104,"id":1001,"shortTitle":"developer-marketing","color":"green","name":"Developer Marketing","hideFromHomepageWidgets":true,"code":"developer-marketing","url":"/developer-marketing"},{"hideFromNav":true,"topic":16873,"id":3001,"shortTitle":"writers-zone","color":"purple","name":"Writers'","hideFromHomepageWidgets":true,"code":"inspiration-station ","url":"/writers-zone"},{"hideFromNav":true,"topic":1382104,"id":5001,"shortTitle":"dev-career","color":"green","name":"Developer Career","hideFromHomepageWidgets":true,"code":"dev-career","url":"/dev-career"}]];
+        TH_CORE_VARS.additional.matchedUrl = {"name":"users:login","mapping":"/users/login.html","mappingPatterns":{}};
+        TH_CORE_VARS.additional.requiresModule = ["generalDirectives","monospaced.elastic","angularFileUpload","ui.bootstrap-slider","angulartics","angulartics.google.analytics","ngCookies","ngSanitize","ui.select","ui.bootstrap","angularMoment","ngTouch","ngDialog","LocalStorageModule"];
+            } catch (e) {
+        console.error(e);
+    }
+</script>
+
+<script type='text/javascript'>
+    var googletag = googletag || {};
+    googletag.cmd = googletag.cmd || [];
+    (function () {
+        var gads = document.createElement('script');
+        gads.async = true;
+        gads.type = 'text/javascript';
+        var useSSL = 'https:' == document.location.protocol;
+        gads.src = (useSSL ? 'https:' : 'http:') +
+                '//www.googletagservices.com/tag/js/gpt.js';
+        var node = document.getElementsByTagName('script')[0];
+        node.parentNode.insertBefore(gads, node);
+    })();
+</script>
+<script type="text/javascript" src="//dz2cdn2.dzone.com/storage/pub/7405673-combined.js" charset="utf-8"></script><script type="text/javascript" src="//dz2cdn2.dzone.com/storage/pub/7405682-combined.js" charset="utf-8"></script><script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-410289-1', 'auto');
+    ga('require', 'linkid', 'linkid.js');
+    ga('require', 'GTM-TSD9TZP');
+    ga('set', 'siteSpeedSampleRate', 25);
+    //ga('send', 'pageview');
+</script>
+
+<!-- Begin Inspectlet Embed Code -->
+<script type="text/javascript" id="inspectletjs">
+    window.__insp = window.__insp || [];
+    __insp.push(['wid', 1999343779]);
+    (function () {
+        function __ldinsp() {
+            var insp = document.createElement('script');
+            insp.type = 'text/javascript';
+            insp.async = true;
+            insp.id = "inspsync";
+            insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js';
+            var x = document.getElementsByTagName('script')[0];
+            x.parentNode.insertBefore(insp, x);
+        }
+
+        if (window.attachEvent) window.attachEvent('onload', __ldinsp);
+        else window.addEventListener('load', __ldinsp, false);
+    })();
+</script>
+<!-- End Inspectlet Embed Code -->
+
+
+
+<script src="https://cdn.optimizely.com/js/664902255.js"></script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-K25QL22');</script>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K25QL22"
+                  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager -->
+
+<script type="text/javascript">
+    (function() {
+            
+            var WMODEL_DATA = {};
+            WMODEL_DATA.isDownload = true;
+        WMODEL_DATA.error = false;
+        WMODEL_DATA.asset = {"title":"Core HTML","image":"//dz2cdn2.dzone.com/storage/rc-covers/4253-dzone_refcard_64.png","download":"/asset/download/192","url":"/refcardz/core-html"};
+        WMODEL_DATA.OPTIONS = {};
+        TH.installWidgetController('users.loginFormV3', 'usersLoginFormV33', WMODEL_DATA, typeof controller == 'function' ? controller : null, null, ' oUhbwfbjZcprCjZcprCC oUhbwfbjZcprBjZcprBC', null);
+        })();
+        </script>
+    <script type="text/javascript">
+
+        TH.installWidgetDirective('leads.addCRM', 'leadsAddCRM', {"service":null,"extra":null}, 'widget.html', '/widgets/leads/addCRM/widget.js', [{name: 'DEFAULT', data: true}], ' oUhb_ObOQnKRMnM oUhbcgvKRcgcONfPC', ['/scripts/utilities/tools.js'], ['add-crm.less','add-ref.less']);
+        
+        TH.installWidgetDirective('manage.revisions', 'manageRevisions', {"service":{"node":"=","body":"=","masterTemplate":"=","format":"=","mode":"="},"extra":null}, 'widget.html', '/widgets/manage/revisions/widget.js', [{name: 'revision', data: true},{name: 'DEFAULT', data: true}], ' oUhbXYVajkgpfWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('manage.customNotifications.preview', 'manageCustomNotificationsPreview', {"service":null,"extra":null}, 'widget.html', '/widgets/manage/customNotifications/preview/widget.js', null, ' oUhbXYVMwrjrYVdgpZfnkZfnkM dLgZWBLPpWkKeXB', null, ['preview.less','/lib/froala-2/css/froala_style.min.css']);
+        
+        TH.installWidgetDirective('users.signInForm', 'usersSignInForm', {"service":null,"extra":null}, 'widget.html', '/widgets/users/signInForm/widget.js', null, ' oUhbwfbkdfdnbZfcpWC', null, ['signInForm.less']);
+        
+        TH.installWidgetDirective('users.profile.mini', 'usersProfileMini', {"service":{"user":"="},"extra":null}, 'widget.html', '/widgets/users/profile/mini/widget.js', [{name: 'DEFAULT', data: true}], ' oUhbwfbqddOeffWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('links.postV2', 'linksPostV2', {"service":null,"extra":null}, 'widget.html', '/widgets/links/postV2/widget.js', null, ' oUhbdhbnvXZqyBC', null, ['postV2.less']);
+        
+        TH.installWidgetDirective('links.listV2', 'linksListV2', {"service":null,"extra":null}, 'widget.ftl', '/widgets/links/listV2/widget.js', [{name: 'linkData', data: true},{name: 'list', data: true},{name: 'parseLink', data: true}], ' oUhbdhbdvXVkyBC', ['directives.js','filters.js'], ['listV2.less']);
+        
+        TH.installWidgetDirective('users.uiPrefs', 'usersUiPrefs', {"service":null,"extra":null}, 'widget.html', '/widgets/users/uiPrefs/widget.js', null, '', null, null);
+        
+        TH.installWidgetDirective('links.postPreview', 'linksPostPreview', {"service":{"url":"=","edit":"="},"extra":null}, 'widget.html', '/widgets/links/postPreview/widget.js', [{name: 'topics', data: true},{name: 'DEFAULT', data: true}], ' oUhbdhbnvqjXfoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('manage.customNotifications.test', 'manageCustomNotificationsTest', {"service":{"customNotification":"="},"extra":null}, 'widget.html', '/widgets/manage/customNotifications/test/widget.js', [{name: 'searchGroups', data: true},{name: 'searchUsers', data: true},{name: 'DEFAULT', data: true}], ' oUhbXYVMwrjrYVdgpcgcoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('header.sections', 'headerSections', {"service":null,"extra":null}, 'widget.html', '/widgets/header/sections/widget.js', null, ' oUhbWOfbRllbgfgpM', null, ['sections.less']);
+        
+        TH.installWidgetDirective('emailSubscriptions.subscribeInjection', 'emailSubscriptionsSubscribeInjection', {"service":null,"extra":null}, 'widget.html', '/widgets/emailSubscriptions/subscribeInjection/widget.js', null, ' oUhbaTnfejsgpbfejQfYfgXoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('users.loginFormV2', 'usersLoginFormV2', {"service":null,"extra":null}, 'widget.html', '/widgets/users/loginFormV2/widget.js', null, ' oUhbwfbjZcprBjZcprBC', null, ['loginFormV2.less']);
+        
+        TH.installWidgetDirective('refcardz.mini', 'refcardzMini', {"service":{"asset":"="},"extra":null}, 'widget.html', '', [{name: 'DEFAULT', data: true}], ' oUhbfSbmWfSoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('links.sources.mini', 'linksSourcesMini', {"service":{"link":"="},"extra":null}, 'widget.html', '', [{name: 'DEFAULT', data: true}], ' oUhbdhbqvRbefWfSC', null, ['mini.less']);
+        
+        TH.installWidgetDirective('header.zonesDropdown', 'headerZonesDropdown', {"service":{"portal":"="},"extra":{"hover":"="}}, 'widget.html', '/widgets/header/zonesDropdown/widget.js', [{name: 'DEFAULT', data: true}], '', null, null);
+        
+        TH.installWidgetDirective('users.noMembership', 'usersNoMembership', {"service":null,"extra":null}, 'widget.html', '/widgets/users/noMembership/widget.js', null, ' oUhbwfblaYfjhfWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('emailSubscriptions.subscriptions.unsubscribeHeader', 'emailSubscriptionsSubscriptionsUnsubscribeHeader', {"service":null,"extra":null}, 'widget.html', '', null, ' oUhbaTnfejsgpbfejsgpdpfejQWOffWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('assets.mini', 'assetsMini', {"service":{"asset":"="},"extra":null}, 'widget.html', '', [{name: 'DEFAULT', data: true}], ' oUhbcgvWfSoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('emailSubscriptions.subscriptions.nonMemberJoin', 'emailSubscriptionsSubscriptionsNonMemberJoin', {"service":null,"extra":null}, 'widget.html', '', null, ' oUhbaTnfejsgpbfejsgpXlaYfhffWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('article.listV2', 'articleListV2', {"service":null,"extra":null}, 'widget.html', '/widgets/article/listV2/widget.js', [{name: 'list', data: true},{name: 'sortCount', data: true}], ' oUhbblYOdvXKuV_VkcC', ['directives.js'], ['article-list.less']);
+        
+        TH.installWidgetDirective('content.commentBox', 'contentCommentBox', {"service":{"parent":"="},"extra":{"count":"=","limited":"="}}, 'widget.html', '/widgets/content/commentBox/widget.js', [{name: 'post', data: false},{name: 'edit', data: false},{name: 'DEFAULT', data: true}], ' oUhbaqbcaibevMkaqbC', null, ['comments.less']);
+        
+        TH.installWidgetDirective('users.loginForm', 'usersLoginForm', {"service":null,"extra":null}, 'widget.html', '/widgets/users/loginForm/widget.js', null, ' oUhbwfbjZcpWjZcpWC', null, ['loginForm.less']);
+        
+        TH.installWidgetDirective('emailSubscriptions.subscriptions.memberManageHeader', 'emailSubscriptionsSubscriptionsMemberManageHeader', {"service":null,"extra":null}, 'widget.html', '', null, ' oUhbaTnfejsgpbfejsgpWaQnYRWPSaoUhM', null, ['widget.less']);
+        
+        TH.installWidgetDirective('emailSubscriptions.subscriptions.nonMemberManageHeader', 'emailSubscriptionsSubscriptionsNonMemberManageHeader', {"service":null,"extra":null}, 'widget.html', '', null, ' oUhbaTnfejsgpbfejsgpXlaYfXYVWOffWVcC', null, ['widget.less']);
+        
+        TH.installWidgetDirective('emailSubscriptions.footerWidget', 'emailSubscriptionsFooterWidget', {"service":null,"extra":null}, 'widget.html', '/widgets/emailSubscriptions/footerWidget/widget.js', null, ' oUhbaTnfejsgpPmhxWVcoUhM', null, ['widget.less']);
+            </script>
+
+</body>
+
+
